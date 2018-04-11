@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>Python解释器</title>
+<meta name="keywords" content="wendelue" />
+<meta name="description" content="wendelue的个人主页" />
+<link href="../css/styles.css" rel="stylesheet">
+<link href="../css/animation.css" rel="stylesheet">
+<link href="../css/nivo-slider.css" rel="stylesheet" type="text/css" />
+<link href="../css/view.css" rel="stylesheet">
+<!-- 返回顶部调用 begin -->
+<link href="../css/lrtk.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/js.js"></script>
+<!-- 返回顶部调用 end-->
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+  <nav id="nav">
+    <ul>
+	  <li style="font-size:40px;float:right;color:#334">wendelue</li>
+      <li><a href="../zhuye.html" >首  页</a></li>
+      <li><a href="../rizhi.html" target="_blank" title="日志">日  志</a></li>
+      <li><a href="../tupian/tupian.html" target="_blank" title="相册">相  册</a></li>
+      <li><a href="../jianli/index.html" target="_blank" title="关于我">关  于  我</a></li>
+    </ul>
+    <script src="../js/silder.js"></script><!--获取当前页导航 高亮显示标题--> 
+  </nav>
+</header>
+<!--header end-->
+<div id="mainbody">
+  <div class="blogs">
+    <div id="index_view">
+      <h2 class="t_nav"><a href="/"><strong>Python基础入门</strong></a></h2>
+      <h1 class="c_titile">Python解释器</h1>
+      <p class="box">发布时间：2017-08-09<span>编辑：wendelue</span></p>
+      <ul>
+        <p>当我们编写Python代码时，我们得到的是一个包含Python代码的以.py为扩展名的文本文件。要运行代码，就需要Python解释器去执行.py文件。由于整个Python语言从规范到解释器都是开源的，所以理论上，只要水平够高，任何人都可以编写Python解释器来执行Python代码（当然难度很大）。事实上，确实存在多种Python解释器。</p>
+		<h2><strong>CPython</strong></h2>
+        <p>当我们从Python官方网站下载并安装好Python 3.5后，我们就直接获得了一个官方版本的解释器：CPython。这个解释器是用C语言开发的，所以叫CPython。在命令行下运行python就是启动CPython解释器。CPython是使用最广的Python解释器。教程的所有代码也都在CPython下执行。</p>
+		
+		<h2><strong>IPython</strong></h2>
+		<p>IPython是基于CPython之上的一个交互式解释器，也就是说，IPython只是在交互方式上有所增强，但是执行Python代码的功能和CPython是完全一样的。好比很多国产浏览器虽然外观不同，但内核其实都是调用了IE。CPython用>>>作为提示符，而IPython用In [序号]:作为提示符。</p>
+		
+		<h2><strong>PyPy</strong></h2>
+		<p>PyPy是另一个Python解释器，它的目标是执行速度。PyPy采用JIT技术，对Python代码进行动态编译（注意不是解释），所以可以显著提高Python代码的执行速度。绝大部分Python代码都可以在PyPy下运行，但是PyPy和CPython有一些是不同的，这就导致相同的Python代码在两种解释器下执行可能会有不同的结果。如果你的代码要放到PyPy下执行，就需要了解PyPy和CPython的不同点。</p>
+		
+		
+		<h2><strong>Jython</strong></h2>
+		<p>Jython是运行在Java平台上的Python解释器，可以直接把Python代码编译成Java字节码执行。</p>
+		
+		<h2><strong>IronPython</strong></h2>
+		<p>IronPython和Jython类似，只不过IronPython是运行在微软.Net平台上的Python解释器，可以直接把Python代码编译成.Net的字节码。</p>
+		
+		<h2><strong>小结</strong></h2>
+		<p>Python的解释器很多，但使用最广泛的还是CPython。如果要和Java或.Net平台交互，最好的办法不是用Jython或IronPython，而是通过网络调用来交互，确保各程序之间的独立性。</p>
+		 
+		
+	  </ul>
+      <div class="share"> 
+        <!-- Baidu Button BEGIN -->
+        <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare"> <span class="bds_more">分享到：</span> <a class="bds_qzone"></a> <a class="bds_tsina"></a> <a class="bds_tqq"></a> <a class="bds_renren"></a> <a class="bds_t163"></a> <a class="shareCount"></a> </div>
+        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585" ></script> 
+        <script type="text/javascript" id="bdshell_js"></script> 
+        <script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script> 
+        <!-- Baidu Button END --> 
+      </div>
+	</div>
+    <!--bloglist end-->
+    <aside>
+	<p style="font-size:40px;text-align:center;color:#555">我的笔记</p>
+	<p style="font-size:10px;text-align:center;color:#333">.</p>
+      <div class="viny">
+        <dl>
+          <dt class="art"><img src="../images/artwork.png" alt="专辑"></dt>
+          <dd class="icon-song"><span></span>活着</dd>
+          <dd class="icon-artist"><span></span>歌手：郝云</dd>
+          <dd class="icon-album"><span></span>所属专辑：《活着》</dd>
+          <dd class="icon-like"><span></span><a href="/">喜欢</a></dd>
+          <dd class="music">
+            <audio src="../images/huozhe.mp3" controls></audio>
+          </dd>
+          <!--也可以添加loop属性 音频加载到末尾时，会重新播放-->
+        </dl>
+      </div>
+      <div class="sunnav">
+        <ul>
+          <li><a href="Python基础入门/Python基础入门.html" target="_blank" title="python基础">Python基础入门</a></li>
+          <li><a href="/newshtml5/" target="_blank" title="机器学习">机器学习</a></li>
+          <li><a href="/jstt/" target="_blank" title="数据分析">数据分析</a></li>
+          <li><a href="/news/s/" target="_blank" title="GitHub">GitHub入门</a></li>
+        </ul>
+      </div>
+	  <div class="toppic">
+        <h2>相关文章</h2>
+        <ul>
+          <li><a href="https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001374738150500472fd5785c194ebea336061163a8a974000"><img src="../images/k01.jpg">python安装教程
+            <p>666</p>
+			</a></li>
+          <li><a href="http://jingyan.baidu.com/article/c910274be14d64cd361d2dd8.html"><img src="../images/k02.jpg">Python2.75的安装及环境配置教程
+            <p>感兴趣</p>
+            </a></li>
+          <li><a href="http://jingyan.baidu.com/article/e73e26c0bad76224acb6a766.html"><img src="../images/k03.jpg">windows下如何下载并安装Python 3.5.1 ?
+            <p>喜欢</p>
+            </a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+  <!--blogs end--> 
+</div>
+<!--mainbody end-->
+<footer>
+  <div class="footer-mid">
+	<div class="links">
+		<h2>友情链接:</h2>
+		<p> <a href="https://morvanzhou.github.io/tutorials">莫凡python</a> .  . <a href="http://www.liaoxuefeng.com">廖雪峰官方网站</a></p>
+		<p> .</p>
+		<h2>关注我:</h2>
+		<p><a href="../jianli/wechat.html">我的微信</a>. .<a href="../jianli/qq.html">我的QQ</a>. . <a href="https://www.facebook.com/profile.php?id=100006904151501">我的Facebook</a> . .<a href="https://twitter.com/wendelue">我的Twitter</a></p>
+	</div>
+	<div class="visitors">
+		<h1 style="font-size:50px;float:right;color:#333">wendelue</h1>
+	</div>
+  </div>
+  <div class="footer-bottom">
+    <p>Copyright 2017. <a href="http://wendelue.github.io">wendelue.github.io All Rights Reserved</a></p>
+  </div>
+</footer>
+<!-- jQuery仿腾讯回顶部和建议 代码开始 -->
+<div id="tbox"> <a id="togbook" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=XCs5Mjg5MCk5HDozJDE9NTByPzMx" style="text-decoration:none;"></a> <a id="gotop" href="javascript:void(0)"></a> </div>
+<!-- 代码结束 -->
+</body>
+</html>
